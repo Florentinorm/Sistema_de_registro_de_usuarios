@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="font-weight-bold">Agregar nuevo usuario</h4>
+    </div>
+    <div class="card-body">
+        <form action="/addCustomer" method="post">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="firstname">Nombre</label>
+                        <input type="text" class="form-control" name="firstname" placeholder="Ingrese su nombre" id="firstname">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="lastname">Apellidos</label>
+                        <input type="text" class="form-control" name="lastname" placeholder="Ingrese sus apellidos" id="lastname">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="phonenumber">Numero de telefono</label>
+                        <input type="number" class="form-control" name="phonenumber" placeholder="Ingrese su numero de telefono" id="phonenumber">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="cnic">CURP</label>
+                        <input type="text" class="form-control" name="cnic" placeholder="Ingrese su CURP" id="cnic">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="addres">Dirección</label>
+                        <textarea class="form-control" name="address" placeholder="Ingrese su dirección" id="address" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button itype="submt" class="btn btn-success">Guardar</button>
+                <a href="/" class="btn btn-light">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
